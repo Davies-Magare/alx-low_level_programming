@@ -2,10 +2,10 @@
 /**
  * main - Entry point
  *
- * Return 0 (Success)
+ * Return: 0 (Success)
  */
 
-int main(void) /*Printing the values of all the types in the system*/
+int main(void)	/* not expecting a return value */
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));
 	printf("Size of an int: %ld byte(s)\n", sizeof(int));
@@ -14,4 +14,5 @@ int main(void) /*Printing the values of all the types in the system*/
 	printf("Size of a float: %ld byte(s)\n", sizeof(float));
 	return (0);
 }
+
 /*Printing values of all types in the system*/
