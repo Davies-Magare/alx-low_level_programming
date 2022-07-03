@@ -6,3 +6,4 @@ Printing with puts function
 Printing with printf
 7: generating assembly commands with -masm
 Task 8
+Writes to std error
