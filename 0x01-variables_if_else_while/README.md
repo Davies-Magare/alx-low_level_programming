@@ -5,3 +5,4 @@ Printing alphabet with putchar lowercase
 6 prints numbers 0 to 9
 Printing numbers with char
 7 prints alphabet in reverse
+Printing hexadecimals in c
