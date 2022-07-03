@@ -5,3 +5,4 @@ Script 3 compiles code and creates an executable file
 Printing with puts function
 Printing with printf
 7: generating assembly commands with -masm
+Task 8
