@@ -7,3 +7,4 @@ Printing numbers with char
 7 prints alphabet in reverse
 Printing hexadecimals in c
 9 prints all possible combinations of single numbers
+10 prints 2 combinations of single digit numbers
