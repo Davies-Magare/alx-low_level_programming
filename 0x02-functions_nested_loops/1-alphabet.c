@@ -14,7 +14,7 @@ void print_alphabet(void) /* prints alphabet in lowercase*/
 		_putchar(c);
 		_putchar('\n');
 	}
-	return (0);
+	return;
 }
 
 
