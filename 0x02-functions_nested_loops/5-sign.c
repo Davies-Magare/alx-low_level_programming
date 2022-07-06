@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * int print_sign - prints the sign of a number
+ * @c: The number to be checked
+ *
+ * Return: 0
+ */
+int print_sign(int n)
+{
+	if (n > 0)
+	{
+		return (1);
+	{
+	_putchar('+');
+	if else (n == 0)
+	{
+		return (0);
+	}
+	_putchar('0');
+	else
+	{
+		return (-1);
+	}
+	_putchar('-1');
+}
