@@ -2,8 +2,5 @@
 
 int main(void)
 {
-	char c;
-	c = 'z';
-	int _isupper()
-	return (0);
+	print_most_numbers(void);
 }
