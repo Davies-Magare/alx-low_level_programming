@@ -5,7 +5,7 @@
  * @c: character to be checked
  * Return: 0
  */
-int_isupper(int c)
+int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (1);
