@@ -1,6 +1,7 @@
 #include "main.h"
 
-int main(void)
+int main (void)
 {
-	print_most_numbers(void);
+	more_numbers();
+	return (0);
 }
