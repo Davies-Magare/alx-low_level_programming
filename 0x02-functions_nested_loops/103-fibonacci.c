@@ -24,4 +24,5 @@ int main(void)
 	}
 	printf("%li", sum);
 	printf("\n");
+	return (0);
 }
