@@ -19,8 +19,6 @@ char *leet(char *str)
 		{
 			if (str[i] == replaced[j])
 				str[i] = replace[j % 5];
-			else
-				continue;
 		}
 	}
 	return (str);
