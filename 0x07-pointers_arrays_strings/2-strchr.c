@@ -6,13 +6,16 @@
  * @s: The string to locate the character
  * @c: The character to be located in the string s
  *
- * Return: On success, a pointer to the first occurence of 
+ * Return: On success, a pointer to the first occurence of
  * c in s
  * otherwise, return NULL
  */
 char *_strchr(char *s, char c)
 {
 	int i, len;
+	char *p;
+
+	p = NULL;
 
 	len = 0;
 	for (i = 0; s[i] != '\0'; i++)
@@ -24,7 +27,7 @@ char *_strchr(char *s, char c)
 			if (i <= len)
 				continue;
 			else
-				return (NULL);
+				return (p);
 		}
 		else
 			break;
