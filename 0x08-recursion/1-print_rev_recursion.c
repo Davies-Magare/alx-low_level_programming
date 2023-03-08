@@ -12,6 +12,8 @@ void _print_rev_recursion(char *s)
 
 	count = 1;
 
+	if (*s == " ")
+		return;
 	if (*(s + 1) != '\0')
 	{
 		count++;
