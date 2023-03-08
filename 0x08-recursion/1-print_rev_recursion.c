@@ -9,9 +9,9 @@
 void _print_rev_recursion(char *s)
 {
 	int count;
-	char p;
+	int p;
 
-	p = ' ';
+	p = 0;
 
 	count = 1;
 
