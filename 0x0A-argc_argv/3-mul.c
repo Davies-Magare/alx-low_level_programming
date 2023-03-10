@@ -11,7 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, mul;
+	int i;
+	long int mul;
 
 	if (argc == 1)
 	{
@@ -23,6 +24,6 @@ int main(int argc, char *argv[])
 	{
 		mul *= atoi(argv[i]);
 	}
-	printf("%i\n", mul);
+	printf("%li\n", mul);
 	return (0);
 }
