@@ -13,11 +13,11 @@ char *str_concat(char *s1, char *s2)
 {
 	char *A;
 	int i, len, j;
-	
+
 	if (s1 == NULL)
-		return (s2);
+		*s1 = '\0';
 	if (s2 == NULL)
-		return (s1);
+		*s2 = '\0';
 	A = NULL;
 	len = 0;
 	for (i = 0; s1[i] != '\0'; i++)
