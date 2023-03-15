@@ -40,7 +40,7 @@ int _check_palindrome(char *s1, char *s2)
 {
 	if (*s1 != *s2)
 		return (0);
-	if (s1 - s2 == 1 || s1 - s2 == 2 && *s1 == *s2)
+	if (s1 - s2 == 1 || (s1 - s2 == 2 && *s1 == *s2))
 		return (1);
 	return (_check_palindrome(s1 + 1, s2 - 1));
 }
