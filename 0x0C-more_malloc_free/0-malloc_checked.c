@@ -3,7 +3,7 @@
 
 /**
  * malloc_checked - allocates memory using malloc
- * @int b - Number of bytes to be allocated
+ * @b - Number of bytes to be allocated
  *
  * Return: On Success, a pointer to the allocated memory
  * Otherwise, the function terminates the process with a
