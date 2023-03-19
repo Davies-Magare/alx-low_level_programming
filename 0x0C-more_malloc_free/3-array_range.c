@@ -18,8 +18,10 @@ int *array_range(int min, int max)
 
 	if (max < 0)
 		size = (pstv + min + 1);
-	else
+	else if (max > 0 && max != min)
 		size = ((max - min) + 1);
+	else
+		size = max - min;
 
 	if (min > max)
 		return (NULL);
