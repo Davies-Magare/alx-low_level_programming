@@ -13,14 +13,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *A;
 	int *a;
-	int mag;
+	int mag, i;
 
 	if (nmemb <= 0 || size <= 0)
 		return (NULL);
 	mag = (nmemb * size) / sizeof(int);
 	A = NULL;
 	A = malloc(nmemb * size);
-	a = (int *)a;
+	a = (int *)A;
 	if (a == NULL)
 		return (NULL);
 	for (i = 0; i < mag; i++)
