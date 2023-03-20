@@ -10,11 +10,10 @@
  * Description: This is a new struct type with three
  * members: name, age and owner.
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *name;
-};
-typedef struct dog dog_t;
+}dog_t;
 #endif
