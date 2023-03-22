@@ -15,7 +15,7 @@
  * Return: On success, a pointer to the new type in memory,
  * Otherwise the function returns NULL
  */
-dog_t *new_dog(char *name, float age, char owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t new_dog;
 	dog_t *dogs = &new_dog;
