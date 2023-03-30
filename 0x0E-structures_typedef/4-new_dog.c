@@ -17,26 +17,19 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t new_dog;
-	dog_t *dogs = &new_dog;
-	char *namecpy;
-	char *ownercpy;
+	dog_t *newdog;
 
-	namecpy = malloc(20);
-	ownercpy = malloc(20);
-	if (namecpy != NULL)
-		_strcpy(namecpy, name);
-	if (ownercpy != NULL)
-		_strcpy(ownercpy, owner);
-	if (dogs != NULL)
-	{
-		dogs->name = namecpy;
-		dogs->age = age;
-		dogs->owner = ownercpy;
-		return (dogs);
-	}
-	else
+	newdog = malloc(sizeof(dog_t));
+	if (newdog == NULL)
 		return (NULL);
+	newdog->name = malloc(_strlen(name) + 1);
+	if (newdog->name != NULL)
+		_strcpy(newdog->name, name);
+	newdog->age = age;
+	newdog->owner = malloc(_strlen(owner) + 1);
+	if (newdog->owner != NULL)
+		_strcpy(newdog->owner, owner);
+	return (newdog);
 }
 
 /**
@@ -54,4 +47,21 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 	dest[i] = '\0';
 	return (dest);
+}
+
+/**
+ * _strlen - finds the length of a string
+ * @s: A pointer to a string
+ *
+ * Return: The length of the string
+ */
+int _strlen(char *s)
+{
+	int i, len;
+
+	len = 0;
+	for (i = 0; s[i]; i++)
+		len++;
+
+	return (len);
 }
