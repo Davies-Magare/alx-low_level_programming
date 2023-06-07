@@ -25,7 +25,7 @@ int _sqrt_recursion(int n)
  */
 int sqrt_compt(int x, int y)
 {
-	if (y > x / 2 || y < 0)
+	if (y < 0)
 		return (-1);
 	else if(y * y == x)
 		return (y);
