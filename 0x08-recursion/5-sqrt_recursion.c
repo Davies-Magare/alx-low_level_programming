@@ -30,4 +30,5 @@ int sqrt_compt(int x, int y)
 	if (y * y == x)
 		return (y);
 	sqrt_compt(x, y + 1);
+	return (y);
 }
