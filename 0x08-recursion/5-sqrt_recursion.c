@@ -25,10 +25,13 @@ int _sqrt_recursion(int n)
  */
 int sqrt_compt(int x, int y)
 {
+	int sq;
+
+	sq = y;
 	if (y > x / 2 || y < 0)
 		return (-1);
-	if (y * y == x)
-		return (y);
-	sqrt_compt(x, y + 1);
-	return (y);
+	if (y * y != x)
+		return(sqrt_compt(x, y + 1));
+	else
+		return (sq);
 }
