@@ -29,6 +29,7 @@ int is_palindrome(char *s)
  *
  * Return: 1 if string is palindrome, 0 if otherwise
  */
+int find_palindrome(char *s, char *s2)
 {
 	if (*s != *s2)
 		return (0);
