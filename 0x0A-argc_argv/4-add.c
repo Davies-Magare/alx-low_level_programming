@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
 	{
 		if (argc == 1)
 		{
-			printf("%i\n", 0);
 			break;
 		}
 		status = atoi(argv[index]);
