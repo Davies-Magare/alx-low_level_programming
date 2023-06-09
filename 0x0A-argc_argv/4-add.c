@@ -20,13 +20,13 @@ int main(int argc, char *argv[])
 			break;
 		}
 		status = atoi(argv[index]);
-		if (status)
-			sum += atoi(argv[index]);
-		else
+		if (status <= 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
+		else
+			sum += atoi(argv[index]);
 	}
 	printf("%i\n", sum);
 	return (0);
