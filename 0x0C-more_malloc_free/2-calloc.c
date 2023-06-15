@@ -15,10 +15,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int n, i;
 	int *call;
 
-	n = nmemb * size;
+	n = (nmemb * size) / sizeof(int);
 	if (nmemb <= 0 || size <= 0)
 		return (NULL);
-	spc = malloc(n);
+	spc = malloc(nmemb * size);
 	if (spc == NULL)
 		return (NULL);
 	call = (int *) spc;
