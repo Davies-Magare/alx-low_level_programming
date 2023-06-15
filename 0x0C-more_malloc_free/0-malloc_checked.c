@@ -13,8 +13,7 @@ void *malloc_checked(unsigned int b)
 	spc = malloc(b);
 	if (spc == NULL)
 	{
-		return (NULL);
-		exit (98);
+		exit(98);
 	}
 	return (spc);
 }
