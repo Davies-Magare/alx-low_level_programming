@@ -11,20 +11,24 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int i, not_found, result;
 
 	if (size <= 0)
-		return (-1);
+		result = -1;
+	not_found = 1;
 	if (array != NULL && cmp != NULL)
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < size && not_found; i++)
 		{
 			if (cmp(array[i]) != 0)
-				break;
+			{
+				result = i;
+				not_found = 0;
+			}
 		}
 
 	}
 	if (i == size)
-		return (-1);
-	return (i);
+		result = -1;
+	return (result);
 }
