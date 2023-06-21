@@ -5,7 +5,7 @@
  * get_op_func - selects the correct function to perform the operation
  * asked by the user
  * @s: The operator
- * 
+ *
  * Return: The index of the selected operator
  */
 int (*get_op_func(char *s))(int, int)
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	i = 0; 
+	i = 0;
 	while (ops[i].op != NULL)
 	{
 		if (strcmp(s, ops[i].op) == 0)
