@@ -59,7 +59,7 @@ void print_fmt(va_list  *num, char c)
 			printf("%s", string);
 			break;
 		case 'f':
-			printf("%.5f", va_arg(*num, double));
+			printf("%.6f", va_arg(*num, double));
 			break;
 		default:
 			break;
