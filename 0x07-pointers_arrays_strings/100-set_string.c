@@ -14,9 +14,11 @@ void set_string(char **s, char *to)
 	int len;
 	char *str;
 
-	len = strlen(to) + 1;
+	if (to != NULL)
+		len = strlen(to) + 1;
 	str = malloc(len);
 	memset(str, 0, len);
-	strcpy(str, to);
+	if (to != NULL)
+		strcpy(str, to);
 	*s = str;
 }
