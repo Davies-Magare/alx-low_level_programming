@@ -16,7 +16,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (newptr != NULL)
 	{
 		newptr->str = strdup(str);
-		newptr->len - strlen(str);
+		newptr->len = strlen(str);
 		newptr->next = *head;
 		*head = newptr;
 	}
