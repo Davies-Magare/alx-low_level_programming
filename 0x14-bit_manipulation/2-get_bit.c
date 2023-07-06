@@ -10,7 +10,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i;
+	unsigned int i;
 	int array[20];
 
 	i = 0;
@@ -21,7 +21,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		i++;
 	}
 	i = i - 1;
-	if (index > i || index < 0)
+	if (index > i)
 		return (-1);
 	return (array[index]);
 }
