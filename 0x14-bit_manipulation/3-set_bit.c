@@ -9,7 +9,7 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	int temp;
+	unsigned int temp;
 
 	temp = *n;
 	*n = *n | (1 << index);
