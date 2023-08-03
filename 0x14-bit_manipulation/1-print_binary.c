@@ -21,9 +21,9 @@ void print_binary(unsigned long int n)
 			else
 				break;
 		}
-		for(; i >= 0; i--)
+		for (; i >= 0; i--)
 		{
-			if (n & (1 << i)
+			if (n & (1 << i))
 				_putchar('1');
 			else
 				_putchar('0');
