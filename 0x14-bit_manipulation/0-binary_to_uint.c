@@ -9,8 +9,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, dec, len;
-	
+	unsigned int i, dec, len, number;
+
 	len = strlen(b) - 1;
 	dec = 0;
 	for (i = 0; b[i] != '\0'; i++)
@@ -20,5 +20,5 @@ unsigned int binary_to_uint(const char *b)
 		number = (b[i] - 48) << len--;
 		dec += number;
 	}
-	reutrn (dec);
+	return (dec);
 }
