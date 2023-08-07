@@ -12,12 +12,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t rd_ret, writ_ret;
-	char buffer[5000];
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
+		return (0);
+	buffer = (char *)malloc(letters);
+	if (buffer == NULL)
 		return (0);
 	rd_ret = read(fd, buffer, letters);
 	if (rd_ret < 0)
@@ -25,5 +28,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	writ_ret = write(STDOUT_FILENO, buffer, rd_ret);
 	if (writ_ret < 0)
 		return (0);
+	free(buffer);
 	return (rd_ret);
 }
