@@ -29,7 +29,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		count++;
 		temp = temp->next;
 	}
-	if (temp == NULL)
+	if (count < idx)
 		return (NULL);
 	else if (temp->next == NULL)
 	{
