@@ -66,7 +66,9 @@ void add_node_head(hash_node_t **head, const char *key, const char *value)
 		if (strcmp(temp->key, key) == 0)
 		{
 			found = 1;
-			strcpy(temp->value, value);
+			if (temp->value != NULL)
+				free(temp->value);
+			temp->value = strdup(value);
 			break;
 		}
 		temp = temp->next;
