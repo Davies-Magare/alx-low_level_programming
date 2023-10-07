@@ -3,13 +3,13 @@
 /**
  * hash_table_delete - deletes a hash table
  * @ht: The hash table
- * 
+ *
  * Return: Nothing
  */
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned int i;
-	
+
 	if (ht != NULL)
 	{
 		for (i = 0; i < ht->size; i++)
@@ -21,6 +21,13 @@ void hash_table_delete(hash_table_t *ht)
 		ht = NULL;
 	}
 }
+/**
+ * free_element - frees a bucket of the hash table
+ * @list: The head of the bucket
+ *
+ * Returns: Nothing
+ */
+
 void free_element(hash_node_t *list)
 {
 	hash_node_t *temp;
